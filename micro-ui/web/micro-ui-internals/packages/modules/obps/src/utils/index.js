@@ -5,7 +5,7 @@ export const getPattern = (type) => {
     case "Name":
       return /^[^{0-9}^\$\"<>?\\\\~!@#$%^()+={}\[\]*,/_:;“”‘’]{1,50}$/i;
     case "MobileNo":
-      return /^[6-9]{1}[0-9]{9}$/i;
+      return /^77[0-9]{6}$/i;
   }
 };
 

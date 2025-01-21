@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 const SearchFormFieldsComponents = ({ registerRef, searchFormState }) => {
   const { t } = useTranslation();
   const propsForMobileNumber = {
-    maxlength: 10,
-    pattern: "[6-9][0-9]{9}",
+    maxlength: 8,
+    pattern: "^77[0-9]{6}$",
     title: t("ES_SEARCH_APPLICATION_MOBILE_INVALID"),
-    componentInFront: "+91",
+    componentInFront: "+253",
   };
   let validation = {}
   return (

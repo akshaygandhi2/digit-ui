@@ -276,7 +276,7 @@ const TLSelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                   <CardLabel>{`${t("TL_MOBILE_NUMBER_LABEL")}*`}</CardLabel>
                   <div className="field-container">
                     <span className="employee-card-input employee-card-input--front" style={{ marginTop: "-1px" }}>
-                      +91
+                      +253
                     </span>
                     <TextInput
                       type={"text"}
@@ -290,7 +290,7 @@ const TLSelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                       {...{
                         validation: {
                           isRequired: true,
-                          pattern: "[6-9]{1}[0-9]{9}",
+                          pattern: "^77[0-9]{6}$",
                           type: "tel",
                           title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
                         },
@@ -300,7 +300,7 @@ const TLSelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                   <CardLabel>{`${t("TL_TELEPHONE_NUMBER_LABEL")}`}</CardLabel>
                   <div className="field-container">
                     <span className="employee-card-input employee-card-input--front" style={{ marginTop: "-1px" }}>
-                      +91
+                      +253
                     </span>
                     <TextInput
                       type={"text"}
@@ -314,7 +314,7 @@ const TLSelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                       {...{
                         validation: {
                           // isRequired: true,
-                          pattern: "[0][1-9][0-9]{9}|[1-9][0-9]{9}",
+                          pattern: "^77[0-9]{6}$",
                           type: "tel",
                           title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
                         },
@@ -438,7 +438,7 @@ const TLSelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                 <CardLabel>{`${t("TL_MOBILE_NUMBER_LABEL")}*`}</CardLabel>
                 <div className="field-container">
                   <span className="employee-card-input employee-card-input--front" style={{ marginTop: "-1px" }}>
-                    +91
+                    +253
                   </span>
                   <TextInput
                     style={typeOfOwner === "MULTIOWNER" ? { background: "#FAFAFA",maxWidth:"500px" } : {maxWidth:"500px"}}
@@ -454,7 +454,7 @@ const TLSelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                     {...{
                       validation: {
                         isRequired: true,
-                        pattern: "[6-9]{1}[0-9]{9}",
+                        pattern: "^77[0-9]{6}$",
                         type: "tel",
                         title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
                       },

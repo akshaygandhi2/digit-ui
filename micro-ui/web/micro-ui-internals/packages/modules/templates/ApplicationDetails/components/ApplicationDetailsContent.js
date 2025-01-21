@@ -82,7 +82,7 @@ function ApplicationDetailsContent({
         isArray: false,
         d: (res) => {
           let resultstring = "";
-          resultstring = `+91 ${_.get(res,`ProcessInstances[${index}].assignes[0].mobileNumber`)}`;
+          resultstring = `+253 ${_.get(res,`ProcessInstances[${index}].assignes[0].mobileNumber`)}`;
           return resultstring;
         }
       }, }

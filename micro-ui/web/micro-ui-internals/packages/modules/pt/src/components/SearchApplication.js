@@ -146,21 +146,21 @@ const PTSearchApplication = ({tenantId, isLoading, t, onSubmit, data, count, set
                     name="mobileNumber"
                     inputRef={register({
                     minLength: {
-                        value: 10,
+                        value: 8,
                         message: t("CORE_COMMON_MOBILE_ERROR"),
                     },
                     maxLength: {
-                        value: 10,
+                        value: 8,
                         message: t("CORE_COMMON_MOBILE_ERROR"),
                     },
                     pattern: {
-                    value: /[6789][0-9]{9}/,
+                    value: /^77[0-9]{6}$/,
                     //type: "tel",
                     message: t("CORE_COMMON_MOBILE_ERROR"),
                     },
                 })}
                 type="number"
-                componentInFront={<div className="employee-card-input employee-card-input--front">+91</div>}
+                componentInFront={<div className="employee-card-input employee-card-input--front">+253</div>}
                 //maxlength={10}
                 />
                  <CardLabelError>{formState?.errors?.["mobileNumber"]?.message}</CardLabelError>

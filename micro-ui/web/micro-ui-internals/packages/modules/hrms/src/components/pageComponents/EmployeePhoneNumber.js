@@ -15,9 +15,9 @@ const SelectEmployeePhoneNumber = ({ t, config, onSelect, formData = {}, userTyp
       populators: {
         validation: {
           required: true,
-          pattern: /^[6-9]\d{9}$/,
+          pattern: /^77\d{6}$/,
         },
-        componentInFront: <div className="employee-card-input employee-card-input--front">+91</div>,
+        componentInFront: <div className="employee-card-input employee-card-input--front">+253</div>,
         error: t("CORE_COMMON_MOBILE_ERROR"),
       },
     },
@@ -42,7 +42,7 @@ const SelectEmployeePhoneNumber = ({ t, config, onSelect, formData = {}, userTyp
             <div className="field-container" style={{ width:isMobile? "100%":"50%", display: "block" }}>
               <div>
                 <div style={{ display: "flex" }}>
-                  <div className="employee-card-input employee-card-input--front">+91</div>
+                  <div className="employee-card-input employee-card-input--front">+253</div>
                   <TextInput
                     className="field desktop-w-full"
                     key={input.name}

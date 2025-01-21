@@ -110,7 +110,7 @@ const VehicleConfig = (t, disabled = false) => {
             name: "phone",
             validation: {
               required: true,
-              pattern: /^[6-9]\d{9}$/,
+              pattern: /^77\d{6}$/,
             },
             error: t("FSM_REGISTRY_INVALID_PHONE"),
             defaultValue: "",

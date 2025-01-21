@@ -473,7 +473,7 @@ const ConnectionDetails = (_props) => {
                 render={(props) => (
                   <div style={{ display: "flex", alignItems: "baseline", marginRight: isEmployee && isMobile ? "" : (getValues("mobileNumber")?.includes("*") && !(isMobile && isEmployee) ? "-20px" : "-4%") }}>
                     <div className="employee-card-input employee-card-input--front" style={{ position: "relative", marginTop: "4px" }}>
-                      +91
+                      +253
                     </div>
                     <TextInput
                       //type="number"

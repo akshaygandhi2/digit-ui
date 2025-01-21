@@ -81,7 +81,7 @@ const SearchComplaint = ({ onSearch, type, onClose, searchParams }) => {
                   value={mobileNo}
                   onChange={setMobile}
                   inputRef={register({
-                    pattern: /^[6-9]\d{9}$/,
+                    pattern: /^77\d{6}$/,
                   })}
                 ></TextInput>
               </span>

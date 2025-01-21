@@ -6,7 +6,7 @@ const MobileNumber = (props) => {
 
   const onChange = (e) => {
     let val = e.target.value;
-    if (isNaN(val) || [" ", "e", "E"].some((e) => val.includes(e)) || val.length > (props.maxLength || 10)) {
+    if (isNaN(val) || [" ", "e", "E"].some((e) => val.includes(e)) || val.length > (props.maxLength || 8)) {
       val = val.slice(0, -1);
     }
     props?.onChange?.(val);
@@ -17,7 +17,7 @@ const MobileNumber = (props) => {
       <div className="field-container">
         {!props.hideSpan ? (
           <span style={{ maxWidth: "50px", marginTop: "unset", ...props.labelStyle }} className="citizen-card-input citizen-card-input--front">
-            +91
+            +253
           </span>
         ) : null}
         <div className={`text-input ${user_type === "employee"? "" : "text-mobile-input-width"} ${props.className}`}>

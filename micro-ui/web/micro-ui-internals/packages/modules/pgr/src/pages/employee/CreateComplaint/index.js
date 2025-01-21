@@ -149,9 +149,9 @@ export const CreateComplaint = ({ parentUrl }) => {
             name: "mobileNumber",
             validation: {
               required: true,
-              pattern: /^[6-9]\d{9}$/,
+              pattern: /^77\d{6}$/,
             },
-            componentInFront: <div className="employee-card-input employee-card-input--front">+91</div>,
+            componentInFront: <div className="employee-card-input employee-card-input--front">+253</div>,
             error: t("CORE_COMMON_MOBILE_ERROR"),
           },
         },

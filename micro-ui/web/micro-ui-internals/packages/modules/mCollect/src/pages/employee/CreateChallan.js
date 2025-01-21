@@ -50,7 +50,7 @@ const CreateChallen = ({ ChallanData }) => {
       case "name":
         return /^[^{0-9}^\$\"<>?\\\\~!@#$%^()+={}\[\]*,/_:;“”‘’]{1,50}$/i;
       case "mobileNumber":
-        return /^[6789][0-9]{9}$/i;
+        return /^77[0-9]{6}$/i;
       case "doorNo":
           return /^[^\$\"'<>?~`!@$%^={}\[\]*:;“”‘’]{1,50}$/i;
       case "buildingName":
@@ -442,10 +442,10 @@ const CreateChallen = ({ ChallanData }) => {
               disable: isEdit,
               validation: {
                 required: true,
-                pattern: /^[6-9]\d{9}$/,
+                pattern: /^77\d{6}$/,
               },
               onChange: handleData,
-              componentInFront: <div className="employee-card-input employee-card-input--front">+91</div>,
+              componentInFront: <div className="employee-card-input employee-card-input--front">+253</div>,
               error: t("CORE_COMMON_MOBILE_ERROR"),
             },
           },

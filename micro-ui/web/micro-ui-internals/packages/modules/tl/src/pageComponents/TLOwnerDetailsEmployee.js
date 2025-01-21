@@ -316,7 +316,7 @@ const OwnerForm = (_props) => {
                      control={control}
                      name={"mobileNumber"}
                      defaultValue={owner?.mobileNumber}
-                     rules={{ required: t("REQUIRED_FIELD"), validate: { pattern: (val) => (/^([6-9]{1}[0-9]{9})$/.test(val) ? true : t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID")) } }}
+                     rules={{ required: t("REQUIRED_FIELD"), validate: { pattern: (val) => (/^77[0-9]{6}$/.test(val) ? true : t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID")) } }}
                      render={(props)=>(
                       <MobileNumber
                         type={""}
@@ -445,7 +445,7 @@ const OwnerForm = (_props) => {
                       control={control}
                       name={"mobileNumber"}
                       defaultValue={owner?.mobileNumber}
-                      rules={{ required: t("REQUIRED_FIELD"), validate: (v) => (/^[6789]\d{9}$/.test(v) ? true : t("INVALID_NUMBER")) }}
+                      rules={{ required: t("REQUIRED_FIELD"), validate: (v) => (/^77\d{6}$/.test(v) ? true : t("INVALID_NUMBER")) }}
                       render={(props) => (
                         <MobileNumber
                           value={props.value}

@@ -32,15 +32,15 @@ const PTSearchFields = {
       placeHolder: "PT_HOME_SEARCH_RESULTS_OWN_MOB_PLACEHOLDER",
       validation: {
         minLength: {
-          value: 10,
+          value: 8,
           message: "CORE_COMMON_MOBILE_ERROR",
         },
         maxLength: {
-          value: 10,
+          value: 8,
           message: "CORE_COMMON_MOBILE_ERROR",
         },
         pattern: {
-          value: /[6789][0-9]{9}/,
+          value: /^77[0-9]{6}$/,
           message: "CORE_COMMON_MOBILE_ERROR",
         },
       },

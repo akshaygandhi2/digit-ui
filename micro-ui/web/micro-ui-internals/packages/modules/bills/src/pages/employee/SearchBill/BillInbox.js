@@ -95,14 +95,14 @@ const BillInbox = ({ parentRoute, initialStates, businessService, filterComponen
       {
         label: t("ABG_MOBILE_NO_LABEL"),
         name: "mobileNumber",
-        maxlength: 10,
+        maxlength: 8,
 
         pattern: Digit.Utils.getPattern("MobileNo"),
 
         type: "mobileNumber",
 
         title: t("ES_SEARCH_APPLICATION_MOBILE_INVALID"),
-        componentInFront: "+91",
+        componentInFront: "+253",
       },
     ];
   };

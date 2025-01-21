@@ -56,7 +56,7 @@ const SelectMobileNumber = ({ t, onSelect, showRegisterLink, mobileNumber, onMob
       onSelect={onSelect}
       config={config}
       t={t}
-      componentInFront="+91"
+      componentInFront="+253"
       onChange={onMobileChange}
       value={mobileNumber}
     >

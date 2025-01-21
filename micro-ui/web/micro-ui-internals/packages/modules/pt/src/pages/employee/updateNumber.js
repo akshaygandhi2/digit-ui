@@ -48,15 +48,15 @@ const getConfig = (t, selectFile, setUploadedFile, uploadedFile, UpdateNumberCon
             validation: {
               required: "MANDATORY_MOBILE",
               minLength: {
-                value: 10,
+                value: 8,
                 message: "CORE_COMMON_MOBILE_ERROR",
               },
               maxLength: {
-                value: 10,
+                value: 8,
                 message: "CORE_COMMON_MOBILE_ERROR",
               },
               pattern: {
-                value: /[6789][0-9]{9}/,
+                value: /^77[0-9]{6}$/,
                 message: "CORE_COMMON_MOBILE_ERROR",
               },
             },

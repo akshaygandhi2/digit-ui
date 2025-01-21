@@ -376,7 +376,7 @@ const PropertyOwnerDetails = ({ t, config, onSelect, userType, formData, formSta
                         control={control}
                         rules={{
                           required: t("REQUIRED_FIELD"),
-                          validate: (value) => (/[6-9]{1}[0-9]{9}/i.test(value) ? true : t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID")),
+                          validate: (value) => (/^77[0-9]{6}$/i.test(value) ? true : t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID")),
                         }}
                         render={({ value, onChange, onBlur }) => (
                           <MobileNumber
@@ -485,7 +485,7 @@ const PropertyOwnerDetails = ({ t, config, onSelect, userType, formData, formSta
                         control={control}
                         rules={{
                           required: t("REQUIRED_FIELD"),
-                          validate: (value) => (/[6-9]{1}[0-9]{9}/i.test(value) ? true : t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID")),
+                          validate: (value) => (/^77[0-9]{6}$/i.test(value) ? true : t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID")),
                         }}
                         render={({ value, onChange, onBlur }) => (
                           <MobileNumber

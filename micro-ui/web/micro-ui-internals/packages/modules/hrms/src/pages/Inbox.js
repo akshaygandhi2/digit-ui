@@ -74,10 +74,10 @@ const Inbox = ({ parentRoute, businessService = "HRMS", initialStates = {}, filt
       {
         label: t("HR_MOB_NO_LABEL"),
         name: "phone",
-        maxlength: 10,
-        pattern: "[6-9][0-9]{9}",
+        maxlength: 8,
+        pattern: "^77[0-9]{6}$",
         title: t("ES_SEARCH_APPLICATION_MOBILE_INVALID"),
-        componentInFront: "+91",
+        componentInFront: "+253",
       },
       {
         label: t("HR_EMPLOYEE_ID_LABEL"),

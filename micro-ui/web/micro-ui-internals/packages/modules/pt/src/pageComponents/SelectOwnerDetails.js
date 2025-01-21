@@ -113,7 +113,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData, ownerInde
               ValidationRequired = {true}
               {...(validation = {
                 isRequired: true,
-                pattern: "[6-9]{1}[0-9]{9}",
+                pattern: "^77[0-9]{6}$",
                 type: "tel",
                 title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
               })}
@@ -260,7 +260,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData, ownerInde
           name="mobileNumber"
           onChange={(value) => setMobileNo({ target: { value } })}
           disable={isUpdateProperty || isEditProperty}
-          {...{ required: true, pattern: "[6-9]{1}[0-9]{9}", type: "tel", title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID") }}
+          {...{ required: true, pattern: "^77[0-9]{6}$", type: "tel", title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID") }}
         />
         <CardLabel>{`${t("PT_FORM3_GUARDIAN_NAME")}`}</CardLabel>
         <TextInput

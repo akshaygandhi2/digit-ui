@@ -423,7 +423,7 @@ const OwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                                     />}
                                     <div style={{ marginTop: "30px" }}>
                                         <div className="field-container">
-                                            <div style={{ position: "relative", zIndex: "100", left: "35px", marginTop: "-24.5px",marginLeft:Webview?"-25px":"-25px" }}>+91</div>
+                                            <div style={{ position: "relative", zIndex: "100", left: "35px", marginTop: "-24.5px",marginLeft:Webview?"-25px":"-25px" }}>+253</div>
                                             <TextInput
                                                 style={{ background: "#FAFAFA", padding: "0px 35px" }}
                                                 type={"text"}
@@ -435,7 +435,7 @@ const OwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                                                 onChange={(e) => setMobileNo(index, e)}
                                                 {...(validation = {
                                                     isRequired: true,
-                                                    pattern: "[6-9]{1}[0-9]{9}",
+                                                    pattern: "^77[0-9]{6}$",
                                                     type: "tel",
                                                     title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
                                                 })}

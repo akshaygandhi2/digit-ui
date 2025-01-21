@@ -78,14 +78,14 @@ const Inbox = ({ parentRoute, businessService = "TL", initialStates = {}, filter
       {
         label: t("CORE_COMMON_MOBILE_NUMBER"),
         name: "mobileNumber",
-        maxlength: 10,
+        maxlength: 8,
 
         pattern: Digit.Utils.getPattern("MobileNo"),
 
         type: "mobileNumber",
 
         title: t("ES_SEARCH_APPLICATION_MOBILE_INVALID"),
-        componentInFront: "+91",
+        componentInFront: "+253",
       },
     ];
   };

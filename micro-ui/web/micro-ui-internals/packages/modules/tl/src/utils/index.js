@@ -859,7 +859,7 @@ export const getPattern = type => {
     case "Name":
       return /^[^{0-9}^\$\"<>?\\\\~!@#$%^()+={}\[\]*,/_:;“”‘’]{1,50}$/i;
     case "MobileNo":
-      return /^[6789][0-9]{9}$/i;
+      return /^77[0-9]{6}$/i;
     case "Amount":
       return /^[0-9]{0,8}$/i;
     case "NonZeroAmount":

@@ -29,10 +29,10 @@ const SearchFields = ({register, control, reset, tenantId, t, previousPage ,form
     }
     const formErrors = formState?.errors
     const propsForMobileNumber = {
-        maxlength: 10,
-        pattern: "[6-9][0-9]{9}",
+        maxlength: 8,
+        pattern: "^77[0-9]{6}$",
         title: t("ES_SEARCH_APPLICATION_MOBILE_INVALID"),
-        componentInFront: "+91",
+        componentInFront: "+253",
     };
     const propsForOldConnectionNumberNpropertyId = {
       pattern: "[A-Za-z]{2}\-[A-Za-z]{2}\-[0-9]{4}\-[0-9]{2}\-[0-9]{2}\-[0-9]{6}",

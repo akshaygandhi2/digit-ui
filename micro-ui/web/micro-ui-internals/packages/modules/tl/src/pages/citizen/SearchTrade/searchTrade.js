@@ -77,7 +77,7 @@ const SearchTrade = ({ config: propsConfig, onSelect }) => {
           type: mobileNumber.type,
           populators: {
             name: mobileNumber.name,
-            validation: { pattern: /^[6-9]{1}[0-9]{9}$ / },
+            validation: { pattern: /^77[0-9]{6}$/ },
           },
           disable: true,
           isMandatory: false,

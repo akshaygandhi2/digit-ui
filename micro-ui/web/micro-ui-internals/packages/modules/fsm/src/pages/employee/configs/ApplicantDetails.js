@@ -35,7 +35,7 @@ const ApplicantDetails = (channelMenu, channel, setChannel, disable = {}) => {
           name: "mobileNumber",
           validation: {
             required: true,
-            pattern: /^[6-9]\d{9}$/,
+            pattern: /^77\d{6}$/,
           },
         },
         disable: disable.number,

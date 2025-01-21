@@ -96,7 +96,7 @@ const SearchChallan = ({ config: propsConfig, formData }) => {
         cardStyle={{ margin: "auto",maxWidth:"960px" }}
         headingStyle={{ fontSize: "32px", marginBottom: "16px" }}
         onSelect={onChallanSearch}
-        componentInFront={<div className="employee-card-input employee-card-input--front">+91</div>}
+        componentInFront={<div className="employee-card-input employee-card-input--front">+253</div>}
         isDisabled={!Servicecateogry || !city.code}
         forcedError={t(mobileNumberError)}
         //onSkip={onSkip}
@@ -138,7 +138,7 @@ const SearchChallan = ({ config: propsConfig, formData }) => {
         <CardLabel>{`${t("UC_SEARCH_MOBILE_NO_LABEL")}`}</CardLabel>
         <div className="field-container">
           <span className="employee-card-input employee-card-input--front" style={{ marginTop: "-1px" }}>
-            +91
+            +253
           </span>
           <TextInput
             type={"mobileNumber"}
@@ -151,7 +151,7 @@ const SearchChallan = ({ config: propsConfig, formData }) => {
             onChange={setMobileNo}
             {...(validation = {
               isRequired: false,
-              pattern: "[6-9]{1}[0-9]{9}",
+              pattern: "^77[0-9]{6}$",
               type: "tel",
               title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
             })}

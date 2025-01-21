@@ -27,11 +27,11 @@ const SelectName = ({ t, config, onSelect, formData = {}, userType, register, er
       name: "mobileNumber",
       validation: {
         isRequired: true,
-        pattern: "[6-9]{1}[0-9]{9}",
+        pattern: "^77[0-9]{6}$",
         type: "tel",
         title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
       },
-      componentInFront: <div className="employee-card-input employee-card-input--front">+91</div>,
+      componentInFront: <div className="employee-card-input employee-card-input--front">+253</div>,
       isMandatory: true,
     },
     {

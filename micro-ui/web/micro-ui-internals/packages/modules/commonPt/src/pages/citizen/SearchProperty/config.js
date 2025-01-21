@@ -10,7 +10,7 @@ export const config = [
         label: "PT_OWNER_MOB_NO_LABEL",
         type: "mobileNumber",
         name: "mobileNumber",
-        validation:{pattern:{  value: /[6789][0-9]{9}/,
+        validation:{pattern:{  value: /^77[0-9]{6}$/,
         message: "CORE_COMMON_MOBILE_ERROR",}},
         error: "CORE_COMMON_MOBILE_ERROR",
       },

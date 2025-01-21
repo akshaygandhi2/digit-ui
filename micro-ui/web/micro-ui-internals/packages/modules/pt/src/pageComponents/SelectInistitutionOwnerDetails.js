@@ -175,7 +175,7 @@ const SelectInistitutionOwnerDetails = ({ t, config, onSelect, userType, formDat
             disable={isUpdateProperty || isEditProperty}
             {...(validation = {
               isRequired: true,
-              pattern: "[6-9]{1}[0-9]{9}",
+              pattern: "^77[0-9]{6}$",
               type: "tel",
               title: t("CORE_COMMON_APPLICANT_ALT_NUMBER_INVALID"),
             })}

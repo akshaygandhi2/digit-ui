@@ -101,11 +101,11 @@ const Inbox = ({ parentRoute, initialStates, businessService, filterComponent, i
       {
         label: t("ABG_MOBILE_NO_LABEL"),
         name: "mobileNumber",
-        maxlength: 10,
+        maxlength: 8,
 
         pattern: Digit.Utils.getPattern("MobileNo"),
         title: t("ES_SEARCH_APPLICATION_MOBILE_INVALID"),
-        componentInFront: "+91",
+        componentInFront: "+253",
       },
     ];
   };

@@ -306,7 +306,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
               <CardLabel>{`${t("TL_MOBILE_NUMBER_LABEL")}*`}</CardLabel>
               <div className="field-container">
                 <span className="employee-card-input employee-card-input--front" style={{ marginTop: "-1px" }}>
-                  +91
+                  +253
                 </span>
                 <TextInput
                   type={"text"}
@@ -319,7 +319,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                   //disable={isUpdateProperty || isEditProperty}
                   {...(validation = {
                     isRequired: true,
-                    pattern: "[6-9]{1}[0-9]{9}",
+                    pattern: "^77[0-9]{6}$",
                     type: "tel",
                     title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
                   })}
@@ -328,7 +328,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
               <CardLabel>{`${t("TL_TELEPHONE_NUMBER_LABEL")}`}</CardLabel>
               <div className="field-container">
                 <span className="employee-card-input employee-card-input--front" style={{ marginTop: "-1px" }}>
-                  +91
+                  +253
                 </span>
                 <TextInput
                   type={"text"}
@@ -341,7 +341,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                   //disable={isUpdateProperty || isEditProperty}
                   {...(validation = {
                     // isRequired: true,
-                    pattern: "[6-9]{1}[0-9]{9}",
+                    pattern: "^77[0-9]{6}$",
                     type: "tel",
                     title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
                   })}
@@ -425,7 +425,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
             <CardLabel>{`${t("TL_MOBILE_NUMBER_LABEL")}`}</CardLabel>
             <div className="field-container">
               <span className="employee-card-input employee-card-input--front" style={{ marginTop: "-1px" }}>
-                +91
+                +253
               </span>
               <TextInput
                 style={ismultiple?{background:"#FAFAFA"}:{}}
@@ -439,7 +439,7 @@ const SelectOwnerDetails = ({ t, config, onSelect, userType, formData }) => {
                 //disable={isUpdateProperty || isEditProperty}
                 {...(validation = {
                   isRequired: true,
-                  pattern: "[6-9]{1}[0-9]{9}",
+                  pattern: "^77[0-9]{6}$",
                   type: "tel",
                   title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID"),
                 })}

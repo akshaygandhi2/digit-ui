@@ -19,15 +19,15 @@ const SearchFormFieldsComponents = ({registerRef, searchFormState, searchFieldCo
                             <label>{t("CORE_COMMON_MOBILE_NUMBER")}</label>
                             <MobileNumber name="mobileNumber" type="number" inputRef={registerRef({
                                 minLength: {
-                                    value: 10,
+                                    value: 8,
                                     message: t("CORE_COMMON_MOBILE_ERROR")
                                 },
                                 maxLength: {
-                                    value: 10,
+                                    value: 8,
                                     message: t("CORE_COMMON_MOBILE_ERROR")
                                 },
                                 pattern: {
-                                    value: /[6789][0-9]{9}/,
+                                    value: /^77[0-9]{6}$/,
                                     message: t("CORE_COMMON_MOBILE_ERROR")
                                 }
                             })} />
@@ -53,15 +53,15 @@ const SearchFormFieldsComponents = ({registerRef, searchFormState, searchFieldCo
             <label>{t("CORE_COMMON_MOBILE_NUMBER")}</label>
             <MobileNumber name="mobileNumber" type="number" inputRef={registerRef({
                 minLength: {
-                    value: 10,
+                    value: 8,
                     message: t("CORE_COMMON_MOBILE_ERROR")
                 },
                 maxLength: {
-                    value: 10,
+                    value: 8,
                     message: t("CORE_COMMON_MOBILE_ERROR")
                 },
                 pattern: {
-                    value: /[6789][0-9]{9}/,
+                    value: /^77[0-9]{6}$/,
                     message: t("CORE_COMMON_MOBILE_ERROR")
                 }
             })} />

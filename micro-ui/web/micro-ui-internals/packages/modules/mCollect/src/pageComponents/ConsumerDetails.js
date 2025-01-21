@@ -179,7 +179,7 @@ const OwnerForm1 = (_props) => {
                 control={control}
                 name={"mobileNumber"}
                 defaultValue={consumerdetail?.mobileNumber}
-                rules={{ required: t("REQUIRED_FIELD"), validate: (v) => (/^[6789]\d{9}$/.test(v) ? true : t("CORE_COMMON_MOBILE_ERROR")) }}
+                rules={{ required: t("REQUIRED_FIELD"), validate: (v) => (/^77\d{6}$/.test(v) ? true : t("CORE_COMMON_MOBILE_ERROR")) }}
                 render={(props) => (
                   <MobileNumber
                     value={props.value}

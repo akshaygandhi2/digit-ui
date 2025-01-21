@@ -141,7 +141,7 @@ const LicenseDetails = ({ t, config, onSelect, userType, formData, ownerIndex })
               name="mobileNumber"
               onChange={(value) => setMobileNo({ target: { value } })}
               disable={mobileNumber && !isOpenLinkFlow ? true : false}
-              {...{ required: true, pattern: "[6-9]{1}[0-9]{9}", type: "tel", title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID") }}
+              {...{ required: true, pattern: "^77[0-9]{6}$", type: "tel", title: t("CORE_COMMON_APPLICANT_MOBILE_NUMBER_INVALID") }}
             />
             <CardLabel>{t("BPA_APPLICANT_EMAIL_LABEL")}</CardLabel>
             <TextInput

@@ -62,7 +62,7 @@ const SearchPTID = ({ tenantId, t, onSubmit, onReset, searchBy, PTSearchFields, 
                 ...validation,
               })}
               type="number"
-              componentInFront={<div className="employee-card-input employee-card-input--front">+91</div>}
+              componentInFront={<div className="employee-card-input employee-card-input--front">+253</div>}
               //maxlength={10}
         />
         </div>
