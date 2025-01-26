@@ -126,14 +126,14 @@ const SelectPaymentType = (props) => {
 
   const onChangePayersMobileNumber = (e) => {
     setmobileNumberError(null);
-    let validation = "^\\d{10}$";
+    let validation = "^77[0-9]{6}$";
     if (!e.match(validation)) {
       setmobileNumberError("CORE_COMMON_PHONENO_INVALIDMSG");
       setCanSubmit(false);
     }
     setPayersMobileNumber(e);
 
-    e.length == 10 && payersName != "" ? setCanSubmit(true) : setCanSubmit(false);
+    e.length == 8 && payersName != "" ? setCanSubmit(true) : setCanSubmit(false);
   };
 
   const onChangePayersName = (value) => {

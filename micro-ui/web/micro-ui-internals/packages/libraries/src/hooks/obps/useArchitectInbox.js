@@ -1,5 +1,5 @@
 import React from "react";
-import useInbox from "../useInboxV2";
+import useInbox from "../useInbox";
 import { InboxGeneral } from "../../services/elements/InboxService";
 import { Search } from "../../services/molecules/OBPS/Search";
 import { useQuery } from "react-query";
@@ -33,7 +33,7 @@ const useArchitectInbox = ({ tenantId, filters, withEDCRData = true, isTotalCoun
     return useQuery(
       ["INBOX_DATA", tenantId, ...Object.keys(_filters)?.map((e) => _filters?.[e])],
       async () => {
-        const data = await InboxGeneral.SearchV2({ inbox: { ..._filters } });
+        const data = await InboxGeneral.Search({ inbox: { ..._filters } });
         if (withEDCRData === true) {
           const promises = data?.items?.map((application) => {
             const filters = { edcrNumber: application?.businessObject?.edcrNumber };

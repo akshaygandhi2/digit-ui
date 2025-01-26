@@ -33,7 +33,7 @@ const EditForm = ({ tenantId, data }) => {
   }, []);
 
   useEffect(() => {
-    if (mobileNumber && mobileNumber.length == 10 && mobileNumber.match(Digit.Utils.getPattern('MobileNo'))) {
+    if (mobileNumber && mobileNumber.length == 8 && mobileNumber.match(Digit.Utils.getPattern('MobileNo'))) {
       setShowToast(null);
       if (data.user.mobileNumber == mobileNumber) {
         setPhonecheck(true);

@@ -12,14 +12,4 @@ export const InboxGeneral = {
       data: { ...filters },
     });
   },
-  SearchV2: ({ ...filters }) => {
-    return Request({
-      url: Urls.InboxSearchV2,
-      useCache: false,
-      method: "POST",
-      auth: true,
-      userService: true,
-      data: { ...filters },
-    });
-  },
 };

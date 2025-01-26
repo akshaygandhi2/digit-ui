@@ -16,9 +16,9 @@ const SelectMobileNumber = ({ t, onSelect, showRegisterLink, mobileNumber, onMob
 
   const checkDisbaled = () => {
     if (isCCFEnabled?.isCitizenConsentFormEnabled) {
-      return !(mobileNumber.length === 10 && canSubmit && isCheckBox)
+      return !(mobileNumber.length === 8 && canSubmit && isCheckBox)
     } else {
-      return !(mobileNumber.length === 10 && canSubmit)
+      return !(mobileNumber.length === 8 && canSubmit)
     }
   }
 

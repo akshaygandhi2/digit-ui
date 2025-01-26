@@ -42,7 +42,7 @@ const CreateEmployee = () => {
     return validEmail && name.match(Digit.Utils.getPattern("Name")) && address.match(Digit.Utils.getPattern("Address"));
   };
   useEffect(() => {
-    if (mobileNumber && mobileNumber.length == 10 && mobileNumber.match(Digit.Utils.getPattern("MobileNo"))) {
+    if (mobileNumber && mobileNumber.length == 8 && mobileNumber.match(Digit.Utils.getPattern("MobileNo"))) {
       setShowToast(null);
       Digit.HRMSService.search(tenantId, null, { phone: mobileNumber }).then((result, err) => {
         if (result.Employees.length > 0) {

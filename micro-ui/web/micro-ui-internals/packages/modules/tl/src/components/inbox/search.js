@@ -66,7 +66,7 @@ const SearchLicenseApplication = ({ onSearch, type, onClose, searchFields, searc
   }, [form, formState, setError, clearErrors]);
 
   const onSubmitInput = (data) => {
-    if(data.mobileNumber.length==0||data.mobileNumber.length==10){
+    if(data.mobileNumber.length==0||data.mobileNumber.length==8){
     if (!data.mobileNumber) {
       delete data.mobileNumber;
     }

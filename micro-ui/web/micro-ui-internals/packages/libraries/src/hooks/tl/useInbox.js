@@ -1,5 +1,5 @@
 import React from "react";
-import useInbox from "../useInboxV2";
+import useInbox from "../useInbox";
 
 const useTLInbox = ({ tenantId, filters, config }) => {
   const { applicationStatus, mobileNumber, applicationNumber, sortBy, sortOrder, locality, uuid, limit, offset } = filters;

@@ -1,4 +1,4 @@
-import useInbox from "../useInboxV2";
+import useInbox from "../useInbox";
 
 const useBPAInbox = ({ tenantId, filters, config = {} }) => {
   const { filterForm, searchForm, tableForm } = filters;

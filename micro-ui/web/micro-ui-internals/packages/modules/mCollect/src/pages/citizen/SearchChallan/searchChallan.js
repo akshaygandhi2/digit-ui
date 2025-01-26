@@ -54,7 +54,7 @@ const SearchChallan = ({ config: propsConfig, formData }) => {
 
   function setMobileNo(e) {
     setmobileNumberError(null)
-    let validation = "^\\d{10}$";
+    let validation = "^77[0-9]{6}$";
     if(!e.target.value.match(validation))
     {
       setmobileNumberError("CORE_COMMON_PHONENO_INVALIDMSG");
