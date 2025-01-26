@@ -7,7 +7,7 @@ const PTCard = () => {
   const { t } = useTranslation();
 
   const [total, setTotal] = useState("-");
-  const { data, isLoading, isFetching, isSuccess } = Digit.Hooks.useNewInboxGeneralV2({
+  const { data, isLoading, isFetching, isSuccess } = Digit.Hooks.useNewInboxGeneral({
     tenantId: Digit.ULBService.getCurrentTenantId(),
     ModuleCode: "PT",
     filters: { limit: 10, offset: 0, services: ["PT.CREATE", "PT.MUTATION", "PT.UPDATE"] },

@@ -32,7 +32,6 @@ import { useEvents, useClearNotifications, useNotificationCount } from "./events
 import useCreateEvent from "./events/useCreateEvent";
 import useUpdateEvent from "./events/useUpdateEvent";
 import useNewInboxGeneral from "./useInboxGeneral/useNewInbox";
-import useNewInboxGeneralV2 from "./useInboxGeneral/useNewInboxV2";
 
 import useDynamicData from "./useDynamicData";
 
@@ -513,7 +512,6 @@ const Hooks = {
   useRecieptSearch,
   usePaymentSearch,
   useNewInboxGeneral,
-  useNewInboxGeneralV2,
   useEvents,
   useClearNotifications,
   useNotificationCount,

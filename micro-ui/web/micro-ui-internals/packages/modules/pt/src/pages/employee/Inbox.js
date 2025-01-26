@@ -38,7 +38,7 @@ const Inbox = ({
     : { limit: pageSize, offset: pageOffset, sortBy: sortParams?.[0]?.id, sortOrder: sortParams?.[0]?.desc ? "DESC" : "ASC" };
 
   const { isFetching, isLoading: hookLoading, searchResponseKey, data, searchFields, ...rest } = useNewInboxAPI
-    ? Digit.Hooks.useNewInboxGeneralV2({
+    ? Digit.Hooks.useNewInboxGeneral({
         tenantId,
         ModuleCode: moduleCode,
         filters: { ...searchParams, ...paginationParams, sortParams },
