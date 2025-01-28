@@ -36,9 +36,10 @@ export const ULBService = {
         return user.extraRoleInfo?.tenantId;
       }
     }
+    const stateCode = window.globalConfigs?.getConfig("STATE_LEVEL_TENANT_ID") || process.env.REACT_APP_STATE_LEVEL_TENANT_ID;
     //TODO: fix tenant id from userinfo
     const tenantId =
-      user?.info?.type === "EMPLOYEE" && user?.info?.tenantId ? user?.info?.tenantId : window?.globalConfigs.getConfig("STATE_LEVEL_TENANT_ID");
+      user?.info?.type === "EMPLOYEE" && user?.info?.tenantId ? user?.info?.tenantId : stateCode;
     return tenantId;
   },
   /**
@@ -52,7 +53,8 @@ export const ULBService = {
    * @returns {String}
    */
   getStateId: () => {
-    return window?.globalConfigs?.getConfig("STATE_LEVEL_TENANT_ID");
+    const stateCode = window.globalConfigs?.getConfig("STATE_LEVEL_TENANT_ID") || process.env.REACT_APP_STATE_LEVEL_TENANT_ID;
+    return stateCode;
   },
   /**
    * Custom method to get employee's current ulb object

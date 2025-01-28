@@ -23,5 +23,11 @@ module.exports = function (app) {
     "/vendor",
     "/property-services",
     "/fsm-calculator/v1/billingSlab/_search",
+    "/access/v1/actions/mdms/_get",
+    "/inbox",
+    "/bpa-services",
+    "/tl-services",
+    "/egov-user-event",
+    "/inbox/v1/dss/_search"
   ].forEach((location) => app.use(location, createProxy));
 };
