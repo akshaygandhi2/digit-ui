@@ -68,30 +68,30 @@ const Home = () => {
     },
     options: [
       {
-        name: t(citizenServicesObj?.props?.[0]?.label),
-        Icon: <ComplaintIcon />,
-        onClick: () => history.push(citizenServicesObj?.props?.[0]?.navigationUrl),
-      },
-      {
-        name: t(citizenServicesObj?.props?.[1]?.label),
+        name: t("ACTION_TEST_OBPS"),
         Icon: <PTIcon className="fill-path-primary-main" />,
-        onClick: () => history.push(citizenServicesObj?.props?.[1]?.navigationUrl),
+        onClick: () => history.push("/digit-ui/citizen/obps-home"),
       },
       {
-        name: t(citizenServicesObj?.props?.[2]?.label),
-        Icon: <CaseIcon className="fill-path-primary-main" />,
-        onClick: () => history.push(citizenServicesObj?.props?.[2]?.navigationUrl),
+        name: t("ACTION_TEST_BILLS"),
+        Icon: <DocumentIcon />,
+        onClick: () => history.push("/digit-ui/citizen/bills-home"),
       },
+      // {
+      //   name: t(citizenServicesObj?.props?.[2]?.label),
+      //   Icon: <CaseIcon className="fill-path-primary-main" />,
+      //   onClick: () => history.push(citizenServicesObj?.props?.[2]?.navigationUrl),
+      // },
       // {
       //     name: t("ACTION_TEST_WATER_AND_SEWERAGE"),
       //     Icon: <DropIcon/>,
       //     onClick: () => history.push("/digit-ui/citizen")
       // },
-      {
-        name: t(citizenServicesObj?.props?.[3]?.label),
-        Icon: <WSICon />,
-        onClick: () => history.push(citizenServicesObj?.props?.[3]?.navigationUrl),
-      },
+      // {
+      //   name: t(citizenServicesObj?.props?.[3]?.label),
+      //   Icon: <WSICon />,
+      //   onClick: () => history.push(citizenServicesObj?.props?.[3]?.navigationUrl),
+      // },
     ],
     styles: { display: "flex", flexWrap: "wrap", justifyContent: "flex-start", width: "100%" },
   };
@@ -146,7 +146,7 @@ const Home = () => {
           </div> */}
             <div className="ServicesSection">
               <CardBasedOptions style={{ marginTop: "-30px" }} {...allCitizenServicesProps} />
-              <CardBasedOptions style={isMobile ? {} : { marginTop: "-30px" }} {...allInfoAndUpdatesProps} />
+              {/* <CardBasedOptions style={isMobile ? {} : { marginTop: "-30px" }} {...allInfoAndUpdatesProps} /> */}
             </div>
           </div>
         }

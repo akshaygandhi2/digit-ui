@@ -39,6 +39,7 @@ const TopBar = ({
             id="topbar-logo"
             src={img || "https://cdn.jsdelivr.net/npm/@egovernments/digit-ui-css@1.0.7/img/m_seva_white_logo.png"}
             alt="mSeva"
+            style="width:40px height:43px"
           />
           </a>
           <h3>{cityOfCitizenShownBesideLogo}</h3>
