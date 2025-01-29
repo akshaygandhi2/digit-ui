@@ -66,7 +66,7 @@ const ArrearTable = ({ className = "table", headers = [], values = [], arrears =
                   let styleRight = headers.length == i + 1 ? styles.cellRight : {};
                   return (
                     <td style={{ ...styles.cell, textAlign: "left", ...styleRight, whiteSpace: "pre" }} key={i} numeric>
-                      {i > 1 && "₹"}
+                      {i > 1 && "Fdj"}
                       {(row[header] && row[header]["value"]) || "0"}
                     </td>
                   );

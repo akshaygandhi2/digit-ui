@@ -209,7 +209,7 @@ export const CollectPayment = (props) => {
       body: [
         {
           label: t("PAY_TOTAL_AMOUNT"),
-          populators: <CardSectionHeader style={{ marginBottom: 0, textAlign: "right" }}> {`₹ ${bill?.totalAmount}`} </CardSectionHeader>,
+          populators: <CardSectionHeader style={{ marginBottom: 0, textAlign: "right" }}> {`Fdj ${bill?.totalAmount}`} </CardSectionHeader>,
         },
       ],
     },

@@ -266,7 +266,7 @@ let serviceType = data && data?.WaterConnection?.[0] ? "WATER" : "SEWERAGE";
             <Row
               className="border-none"
               label={t("WS_COMMON_TABLE_COL_AMT_DUE_LABEL")}
-              text={paymentDetails?.data?.Bill?.[0]?.billDetails?.[0]?.amount ? "₹ " + Number(paymentDetails?.data?.Bill?.[0]?.billDetails?.[0]?.amount).toFixed(2) : t("₹0")}
+              text={paymentDetails?.data?.Bill?.[0]?.billDetails?.[0]?.amount ? "Fdj " + Number(paymentDetails?.data?.Bill?.[0]?.billDetails?.[0]?.amount).toFixed(2) : t("Fdj 0")}
               textStyle={{ whiteSpace: "pre" }}
             />
             {(data?.WaterConnection?.[0].applicationType?.includes("DISCONNECT")  || data?.SewerageConnections?.[0].applicationType?.includes("DISCONNECT")) 
@@ -314,12 +314,12 @@ let serviceType = data && data?.WaterConnection?.[0] ? "WATER" : "SEWERAGE";
             <CardHeader styles={{ fontSize: "28px" }}>{t("WS_FEE_DEATAILS_HEADER")}</CardHeader>
             <StatusTable>
               {paymentDetails?.data?.Bill?.[0]?.billDetails?.[0]?.billAccountDetails.map((bill) => (
-                <Row className="border-none" label={t(bill?.taxHeadCode)} text={`₹${Number(bill?.amount).toFixed(2)}`} textStyle={{ textAlign: "right" }} />
+                <Row className="border-none" label={t(bill?.taxHeadCode)} text={`Fdj ${Number(bill?.amount).toFixed(2)}`} textStyle={{ textAlign: "right" }} />
               ))}
               <Row
                 className="border-none"
                 label={t("WS_TOTAL_AMOUNT_DUE")}
-                text={`₹${Number(isPaid? 0 : paymentDetails?.data?.Bill?.[0]?.billDetails?.[0]?.amount).toFixed(2)}`}
+                text={`Fdj ${Number(isPaid? 0 : paymentDetails?.data?.Bill?.[0]?.billDetails?.[0]?.amount).toFixed(2)}`}
                 textStyle={{ textAlign: "right", fontSize:"18px", fontWeight: "700" }}
               />
               <Row
@@ -332,11 +332,11 @@ let serviceType = data && data?.WaterConnection?.[0] ? "WATER" : "SEWERAGE";
                     : { textAlign: "right", color: "red" }
                 }
               />
-              {/* <Row label={t("One time Fee")} text={"₹ 16500.00"} textStyle={{textAlign: "right" }} />
-            <Row label={t("Security Charge")} text={"₹ 500.00"} textStyle={{textAlign: "right" }} />
-            <Row label={t("Meter Charge")} text={"₹ 2000.00"} textStyle={{textAlign: "right" }} />
-            <Row label={t("Tax")} text={" ₹ 200.00"} textStyle={{textAlign: "right" }} />
-            <Row label={t("WS_COMMON_TOTAL_AMT")} text={"₹ 15000.00"} textStyle={{textAlign: "right" }} />
+              {/* <Row label={t("One time Fee")} text={"Fdj 16500.00"} textStyle={{textAlign: "right" }} />
+            <Row label={t("Security Charge")} text={"Fdj 500.00"} textStyle={{textAlign: "right" }} />
+            <Row label={t("Meter Charge")} text={"Fdj 2000.00"} textStyle={{textAlign: "right" }} />
+            <Row label={t("Tax")} text={" Fdj 200.00"} textStyle={{textAlign: "right" }} />
+            <Row label={t("WS_COMMON_TOTAL_AMT")} text={"Fdj 15000.00"} textStyle={{textAlign: "right" }} />
             <Row label={t("Status")} text={"Unpaid"} textStyle={{textAlign: "right" }} /> */}
             </StatusTable>
           </Card>

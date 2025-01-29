@@ -333,7 +333,7 @@ export const SuccessfulPayment = (props)=>{
             rowContainerStyle={rowContainerStyle}
             last
             label={t("CS_PAYMENT_AMOUNT_PENDING")}
-            text={(reciept_data?.paymentDetails?.[0]?.totalDue && reciept_data?.paymentDetails?.[0]?.totalAmountPaid ) ? `₹ ${reciept_data?.paymentDetails?.[0]?.totalDue - reciept_data?.paymentDetails?.[0]?.totalAmountPaid}` : `₹ ${0}`}
+            text={(reciept_data?.paymentDetails?.[0]?.totalDue && reciept_data?.paymentDetails?.[0]?.totalAmountPaid ) ? `Fdj ${reciept_data?.paymentDetails?.[0]?.totalDue - reciept_data?.paymentDetails?.[0]?.totalAmountPaid}` : `Fdj ${0}`}
           />
         )}
 
@@ -342,7 +342,7 @@ export const SuccessfulPayment = (props)=>{
           rowContainerStyle={rowContainerStyle}
           last
           label={t(ommitRupeeSymbol ? "CS_PAYMENT_AMOUNT_PAID_WITHOUT_SYMBOL" : "CS_PAYMENT_AMOUNT_PAID")}
-          text={reciept_data?.paymentDetails?.[0]?.totalAmountPaid ? ("₹ " +  reciept_data?.paymentDetails?.[0]?.totalAmountPaid) : `₹ 0` }
+          text={reciept_data?.paymentDetails?.[0]?.totalAmountPaid ? ("Fdj " +  reciept_data?.paymentDetails?.[0]?.totalAmountPaid) : `Fdj 0` }
         />
         {(business_service !== "PT" || workflw) && (
           <Row

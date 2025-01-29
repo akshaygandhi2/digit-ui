@@ -353,25 +353,25 @@ const BillDetails = ({ businessService, consumerCode, _amount, onChange }) => {
           <Row
             label={t("ES_PAYMENT_DETAILS_AMOUNT_PER_TRIP")}
             textStyle={{ textAlign: "left" }}
-            text={"₹ " + Number(getAmountPerTrip()).toFixed(2)}
+            text={"Fdj " + Number(getAmountPerTrip()).toFixed(2)}
           />
           <Row
             label={t("ES_PAYMENT_DETAILS_TOTAL_AMOUNT")}
             textStyle={{ textAlign: "left" }}
-            text={!applicationData?.paymentPreference ? "₹ " + Number(getTotalFSM()).toFixed(2) : "₹ " + Number(bill?.totalAmount).toFixed(2)}
+            text={!applicationData?.paymentPreference ? "Fdj " + Number(getTotalFSM()).toFixed(2) : "Fdj " + Number(bill?.totalAmount).toFixed(2)}
           />
           {!applicationData?.paymentPreference &&
             (getAdvanceAmountPaid ? (
               <Row
                 label={t("ES_PAYMENT_DETAILS_ADV_AMOUNT_PAID")}
                 textStyle={{ fontWeight: "bold", textAlign: "left" }}
-                text={"₹ " + Number(getAdvanceAmount()).toFixed(2)}
+                text={"Fdj " + Number(getAdvanceAmount()).toFixed(2)}
               />
             ) : (
               <Row
                 label={t("ES_PAYMENT_DETAILS_ADV_AMOUNT_DUE")}
                 textStyle={{ fontWeight: "bold", textAlign: "left" }}
-                text={"₹ " + Number(getAdvanceAmount()).toFixed(2)}
+                text={"Fdj " + Number(getAdvanceAmount()).toFixed(2)}
               />
             ))}
 
@@ -379,7 +379,7 @@ const BillDetails = ({ businessService, consumerCode, _amount, onChange }) => {
             <Row
               label={t("FSM_DUE_AMOUNT_TO_BE_PAID")}
               textStyle={{ fontWeight: "bold", textAlign: "left" }}
-              text={"₹ " + Number(dueAmountTobePaid()).toFixed(2)}
+              text={"Fdj " + Number(dueAmountTobePaid()).toFixed(2)}
             />
           ) : null}
         </StatusTable>
@@ -395,7 +395,7 @@ const BillDetails = ({ businessService, consumerCode, _amount, onChange }) => {
                 labelStyle={{ fontWeight: "normal" }}
                 textStyle={{ textAlign: "right", maxWidth: "100px" }}
                 label={t(amountDetails.taxHeadCode)}
-                text={"₹ " + amountDetails.amount?.toFixed(2)}
+                text={"Fdj " + amountDetails.amount?.toFixed(2)}
               />
             ))}
 
@@ -404,7 +404,7 @@ const BillDetails = ({ businessService, consumerCode, _amount, onChange }) => {
               labelStyle={{ fontWeight: "normal" }}
               textStyle={{ textAlign: "right", maxWidth: "100px" }}
               label={t("COMMON_ARREARS")}
-              text={"₹ " + arrears?.toFixed?.(2) || Number(0).toFixed(2)}
+              text={"Fdj " + arrears?.toFixed?.(2) || Number(0).toFixed(2)}
             />
           ) : null}
 
@@ -412,7 +412,7 @@ const BillDetails = ({ businessService, consumerCode, _amount, onChange }) => {
           <Row
             label={t("CS_PAYMENT_TOTAL_AMOUNT")}
             textStyle={{ fontWeight: "bold", textAlign: "right", maxWidth: "100px" }}
-            text={"₹ " + Number(getTotal()).toFixed(2)}
+            text={"Fdj " + Number(getTotal()).toFixed(2)}
           />
 
           {!showDetails && !ModuleWorkflow && businessService !== "TL" && yearWiseBills?.length > 1 && (
@@ -511,7 +511,7 @@ const BillDetails = ({ businessService, consumerCode, _amount, onChange }) => {
               className="payment-amount-front"
               style={{ border: `1px solid ${paymentType === t("CS_PAYMENT_FULL_AMOUNT") ? "#9a9a9a" : "black"}` }}
             >
-              ₹
+              Fdj
             </span>
             {paymentType !== t("CS_PAYMENT_FULL_AMOUNT") ? (
               <TextInput
@@ -526,7 +526,7 @@ const BillDetails = ({ businessService, consumerCode, _amount, onChange }) => {
             )}
             {formError === "CS_CANT_PAY_BELOW_MIN_AMOUNT" ? (
               <span className="card-label-error">
-                {t(formError)}: {"₹" + minAmountPayable}
+                {t(formError)}: {"Fdj " + minAmountPayable}
               </span>
             ) : (
               <span className="card-label-error">{t(formError)}</span>

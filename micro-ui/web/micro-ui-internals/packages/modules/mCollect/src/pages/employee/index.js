@@ -35,11 +35,11 @@ const EmployeeApp = ({ path, url, userType }) => {
       res.Bill.forEach((e) => {
         obj[e.consumerCode] = e.totalAmount;
       });
-      returnData = searchData.map((e) => ({ ...e, due_tax: "₹ " + (obj[e.propertyId] || 0) }));
+      returnData = searchData.map((e) => ({ ...e, due_tax: "Fdj " + (obj[e.propertyId] || 0) }));
     } catch (er) {
       const err = er?.response?.data;
       if (["EG_BS_BILL_NO_DEMANDS_FOUND", "EMPTY_DEMANDS"].includes(err?.Errors?.[0].code)) {
-        returnData = searchData.map((e) => ({ ...e, due_tax: "₹ " + 0 }));
+        returnData = searchData.map((e) => ({ ...e, due_tax: "Fdj " + 0 }));
       }
     }
     return _next(returnData);

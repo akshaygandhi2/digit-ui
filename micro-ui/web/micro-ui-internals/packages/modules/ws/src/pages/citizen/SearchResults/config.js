@@ -12,7 +12,7 @@ export const config = [
           fontSize: "24px",
           fontWeight: "bold",
         },
-        notePrefix: "₹ ",
+        notePrefix: "Fdj ",
       },
       {
         label: "WS_MYCONNECTIONS_CONSUMER_NO",

@@ -16,7 +16,7 @@ function PropertyEstimates({ taxHeadEstimatesCalculation }) {
             <Row
               key={t(estimate.taxHeadCode)}
               label={t(estimate.taxHeadCode)}
-              text={`₹ ${estimate.estimateAmount}` || "N/A"}
+              text={`Fdj ${estimate.estimateAmount}` || "N/A"}
               last={index === taxHeadEstimates?.length - 1}
               className="border-none"
               textStyle={{ color: "#505A5F" }}
@@ -27,7 +27,7 @@ function PropertyEstimates({ taxHeadEstimatesCalculation }) {
         <BreakLine style={{ margin: "16px 0", width: "40%" }} />
         <Row
           label={t("ES_PT_TITLE_TOTAL_DUE_AMOUNT")}
-          text={`₹ ${taxHeadEstimatesCalculation?.totalAmount}` || "N/A"}
+          text={`Fdj ${taxHeadEstimatesCalculation?.totalAmount}` || "N/A"}
           className="border-none"
           textStyle={{ fontSize: "24px", fontWeight: "bold" }}
         />

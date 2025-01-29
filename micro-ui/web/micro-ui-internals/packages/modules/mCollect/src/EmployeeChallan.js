@@ -139,13 +139,13 @@ const EmployeeChallan = (props) => {
             <hr style={{ width: "35%", border: "1px solid #D6D5D4", marginTop: "1rem", marginBottom: "1rem" }} />
             {challanBillDetails?.map((data) => {
               return (
-                <Row label={t(stringReplaceAll(data?.taxHeadCode, ".", "_"))} text={`₹${data?.amount}` || 0} textStyle={{ whiteSpace: "pre" }} />
+                <Row label={t(stringReplaceAll(data?.taxHeadCode, ".", "_"))} text={`Fdj ${data?.amount}` || 0} textStyle={{ whiteSpace: "pre" }} />
               );
             })}
             <hr style={{ width: "35%", border: "1px solid #D6D5D4", marginTop: "1rem", marginBottom: "1rem" }} />
             <Row
               label={<b style={{ padding: "10px 0px" }}>{t("UC_TOTAL_DUE_AMOUT_LABEL")}</b>}
-              text={`₹${totalDueAmount}`}
+              text={`Fdj ${totalDueAmount}`}
               textStyle={{ fontSize: "24px", padding: "10px 0px", fontWeight: "700" }}
             />
           </StatusTable>

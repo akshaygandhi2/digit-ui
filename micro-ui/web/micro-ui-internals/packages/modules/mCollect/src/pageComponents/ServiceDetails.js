@@ -380,15 +380,15 @@ const OwnerForm1 = (_props) => {
                 name={tax?.code}
                 defaultValue={consumerdetail[tax?.code]}
                 isMandatory={tax.isRequired}
-                componentInFront={<div className="employee-card-input employee-card-input--front">₹</div>}
+                componentInFront={<div className="employee-card-input employee-card-input--front">Fdj</div>}
                 rules={tax.isRequired?{ required: t("REQUIRED_FIELD")}:"" }
                 render={(props) => (
                   <div style={{display:"flex"}}>
-                  <div className="employee-card-input employee-card-input--front">₹</div>
+                  <div className="employee-card-input employee-card-input--front">Fdj</div>
                   <TextInput
                     value={props.value}
                     //className="employee-card-input employee-card-input--front"
-                    componentInFront={<div className="employee-card-input employee-card-input--front">₹</div>}
+                    componentInFront={<div className="employee-card-input employee-card-input--front">Fdj</div>}
                     autoFocus={focusIndex.index === consumerdetail?.key && focusIndex.type === "name"}
                     //errorStyle={(localFormState.touched.tradeName && errors?.tradeName?.message) ? true : false}
                     onChange={(e) => {

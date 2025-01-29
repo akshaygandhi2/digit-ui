@@ -186,7 +186,7 @@ const CustomAreaChart = ({ xDataKey = "name", yDataKey = getValue, data, setChar
         }}
       >
         {payloadObj?.payload?.symbol?.toLowerCase() === "amount" && (
-          <p>{`${formattedLabel} : ${value?.denomination === "Unit" ? " ₹" : ""}${Digit.Utils.dss.formatter(
+          <p>{`${formattedLabel} : ${value?.denomination === "Unit" ? " Fdj" : ""}${Digit.Utils.dss.formatter(
             payloadObj?.value,
             "number",
             value?.denomination,
@@ -207,7 +207,7 @@ const CustomAreaChart = ({ xDataKey = "name", yDataKey = getValue, data, setChar
 
   const renderTooltipForLine = ({ payload, label, unit }) => {
     let payloadObj = payload?.[0] || {};
-    let prefix = payloadObj?.payload?.symbol?.toLowerCase() === "amount" && value?.denomination === "Unit" ? " ₹" : " ";
+    let prefix = payloadObj?.payload?.symbol?.toLowerCase() === "amount" && value?.denomination === "Unit" ? " Fdj" : " ";
     let postfix =
       payloadObj?.payload?.symbol?.toLowerCase() === "percentage"
         ? " %"

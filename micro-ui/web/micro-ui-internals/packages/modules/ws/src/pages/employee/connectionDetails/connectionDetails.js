@@ -320,7 +320,7 @@ const GetConnectionDetails = () => {
             <div className="modal-header-ws">{t("WS_CLEAR_DUES_DISCONNECTION_SUB_HEADER_LABEL")} </div>
             <div className="modal-body-ws">
               <span>
-                {t("WS_COMMON_TABLE_COL_AMT_DUE_LABEL")}: ₹{due?due:applicationDetails?.fetchBillsData?.[0]?.totalAmount}
+                {t("WS_COMMON_TABLE_COL_AMT_DUE_LABEL")}: Fdj {due?due:applicationDetails?.fetchBillsData?.[0]?.totalAmount}
               </span>
             </div>
           </Modal>

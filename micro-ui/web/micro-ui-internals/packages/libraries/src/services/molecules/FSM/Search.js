@@ -171,13 +171,13 @@ export const Search = {
           { title: "ES_APPLICATION_DETAILS_PAYMENT_NO_OF_TRIPS", value: response?.noOfTrips === 0 ? "N/A" : response?.noOfTrips },
           {
             title: "ES_APPLICATION_DETAILS_AMOUNT_PER_TRIP",
-            value: amountPerTrip === "N/A" ? "N/A" : "₹ " + amountPerTrip,
+            value: amountPerTrip === "N/A" ? "N/A" : "Fdj " + amountPerTrip,
           },
           {
             title: "ES_PAYMENT_DETAILS_TOTAL_AMOUNT",
-            value: totalAmount === "N/A" ? (amountPerTrip === "N/A" ? "N/A" : "₹ " + response?.noOfTrips * amountPerTrip) : "₹ " + totalAmount,
+            value: totalAmount === "N/A" ? (amountPerTrip === "N/A" ? "N/A" : "Fdj " + response?.noOfTrips * amountPerTrip) : "Fdj " + totalAmount,
           },
-          { title: "ES_PAYMENT_DETAILS_ADV_AMOUNT", value: response?.advanceAmount === null ? "N/A" : "₹ " + response?.advanceAmount },
+          { title: "ES_PAYMENT_DETAILS_ADV_AMOUNT", value: response?.advanceAmount === null ? "N/A" : "Fdj " + response?.advanceAmount },
         ],
       },
       {

@@ -11,7 +11,7 @@ const PTPayments = ({ application }) => {
       <KeyNote
         noteStyle={{ fontSize: "24px", fontWeight: "700" }}
         keyValue={t("CS_PAYMENT_AMOUNT_PAID_WITHOUT_SYMBOL")}
-        note={`₹ ${application?.paymentDetails?.[0]?.totalAmountPaid}`}
+        note={`Fdj ${application?.paymentDetails?.[0]?.totalAmountPaid}`}
       />
       <KeyNote keyValue={t("PT_SEARCHPROPERTY_TABEL_PID")} note={t(application?.paymentDetails?.[0]?.bill?.consumerCode)} />
       <KeyNote keyValue={t("PT_OWNERS_NAME")} note={application?.owners?.map((owner) => owner?.name).join(",")} />

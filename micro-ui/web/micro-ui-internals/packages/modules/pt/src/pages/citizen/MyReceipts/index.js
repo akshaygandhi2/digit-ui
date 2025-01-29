@@ -13,19 +13,19 @@ export const MyReceipts = () => {
     {
       trasactionId: "123",
       serviceCategory: "Property Tax",
-      amountPaid: "₹15000",
+      amountPaid: "Fdj 15000",
       paymentDate: new Date().toLocaleDateString(),
     },
     {
       trasactionId: "123",
       serviceCategory: "Property Tax",
-      amountPaid: "₹15000",
+      amountPaid: "Fdj 15000",
       paymentDate: new Date().toLocaleDateString(),
     },
     {
       trasactionId: "123",
       serviceCategory: "Property Tax",
-      amountPaid: "₹15000",
+      amountPaid: "Fdj 15000",
       paymentDate: new Date().toLocaleDateString(),
     },
   ];

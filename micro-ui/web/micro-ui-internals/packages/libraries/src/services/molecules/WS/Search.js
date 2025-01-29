@@ -1330,8 +1330,8 @@ export const WSSearch = {
       title: "WS_AMOUNT_DETAILS",
       asSectionHeader: true,
       values: [...actualFieldsAndAmountOfBillDetails.map( e => ({
-        title: e?.taxHeadMasterCode, value: `₹ ${e?.taxAmount}`
-      })), { title: "WS_REVISED_DEMAND", value: `₹ ${Math.round(actualFieldsAndAmountOfBillDetails.reduce((acc, curr) => curr.taxAmount + acc, 0))}` }]
+        title: e?.taxHeadMasterCode, value: `Fdj ${e?.taxAmount}`
+      })), { title: "WS_REVISED_DEMAND", value: `Fdj ${Math.round(actualFieldsAndAmountOfBillDetails.reduce((acc, curr) => curr.taxAmount + acc, 0))}` }]
     };
     
     const tableData = billAmendmentSearch?.Amendments?.[0]?.additionalDetails?.searchBillDetails;
@@ -1355,9 +1355,9 @@ export const WSSearch = {
       sumCurrent += currentDemand
       sumApplied += appliedDemand
       sumRevised += revisedDemand
-      tableRows.push([taxHead,`₹${currentDemand}`,`₹${appliedDemand}`,`₹${revisedDemand}`])
+      tableRows.push([taxHead,`Fdj ${currentDemand}`,`Fdj ${appliedDemand}`,`Fdj ${revisedDemand}`])
     })
-    tableRows.push(["WS_TOTAL_DUE",`₹${sumCurrent}`,`₹${sumApplied}`,`₹${sumRevised}`])
+    tableRows.push(["WS_TOTAL_DUE",`Fdj ${sumCurrent}`,`Fdj ${sumApplied}`,`Fdj ${sumRevised}`])
     
     const tableDetails = {
       title: "WS_AMOUNT_DETAILS",
@@ -1789,7 +1789,7 @@ export const WSSearch = {
           { title: "PDF_STATIC_LABEL_CONSUMER_NUMBER_LABEL", value: wsDataDetails?.connectionNo || t("NA") },
           { title: "WS_SERVICE_NAME_LABEL", value: t(`WS_APPLICATION_TYPE_${wsDataDetails?.applicationType? wsDataDetails?.applicationType : wsDataDetails?.serviceType}`) },
           { title: "PDF_STATIC_LABEL_WS_CONSOLIDATED_ACKNOWELDGMENT_DISCONNECTION_TYPE", value: t(`${applicationType}`) },
-          { title: "WNS_COMMON_TABLE_COL_AMT_DUE_LABEL", value: fetchBillData.Bill[0]?.totalAmount ? "₹ " + fetchBillData.Bill[0]?.totalAmount : "₹ 0" },
+          { title: "WNS_COMMON_TABLE_COL_AMT_DUE_LABEL", value: fetchBillData.Bill[0]?.totalAmount ? "Fdj " + fetchBillData.Bill[0]?.totalAmount : "Fdj 0" },
           { title: "WS_DISCONNECTION_PROPOSED_DATE", value: wsDataDetails?.dateEffectiveFrom ? convertEpochToDate(wsDataDetails?.dateEffectiveFrom) : t("NA") },
           { title: "WS_DISCONNECTION_EXECUTED_DATE", value: wsDataDetails?.disconnectionExecutionDate ? convertEpochToDate(wsDataDetails?.disconnectionExecutionDate) : t("NA") },
           { title: "WS_DISCONNECTION_REASON", value: wsDataDetails?.disconnectionReason || t("NA") },

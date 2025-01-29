@@ -40,7 +40,7 @@ const PropertyMarketValue = (props) => {
       <Timeline currentStep={2} flow="PT_MUTATE" />
       <FormStep t={t} config={config} onSelect={goNext} onSkip={onSkip} isDisabled={!marketValue}>
         <div className="field-container">
-          <span className="citizen-card-input citizen-card-input--front">₹</span>
+          <span className="citizen-card-input citizen-card-input--front">Fdj</span>
           <TextInput type={"number"} min={0} onChange={(e) => setSelected(e.target.value)} value={marketValue} />
         </div>
       </FormStep>

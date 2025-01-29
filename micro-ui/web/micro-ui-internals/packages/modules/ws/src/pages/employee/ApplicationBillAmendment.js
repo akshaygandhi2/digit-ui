@@ -417,7 +417,7 @@ const ApplicationBillAmendment = () => {
             {billSearchData?.map((node) => (
               <tr>
                 <td style={{ paddingRight: "60px", fontWeight:"700" }}>{t(`${node.taxHeadCode}`)}</td>
-                <td style={{  textAlign: "end" }}>₹ {node.amount}</td>
+                <td style={{  textAlign: "end" }}>Fdj {node.amount}</td>
                 <div>
                 <td style={{ paddingRight: "60px", paddingLeft:"150px" }}>
                   <>
@@ -480,7 +480,7 @@ const ApplicationBillAmendment = () => {
                   </span>
                 </div>
               </td>
-              <td style={{  textAlign: "end" }}>₹ {adhocAmount || 0}</td>
+              <td style={{  textAlign: "end" }}>Fdj {adhocAmount || 0}</td>
               
               <td style={{ paddingRight: "60px", paddingLeft:"150px" }}>
                 <>

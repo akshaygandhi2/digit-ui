@@ -405,7 +405,7 @@ const CheckPage = ({ onSubmit, value = {} }) => {
             {!isPropertyselfoccupied(selfOccupied?.i18nKey) && (
               <Row
                 label={t("PT_PROPERTY_ANNUAL_RENT_LABEL")}
-                text={`₹${t(checkForNA(Constructiondetails?.AnnualRent))}`}
+                text={`Fdj ${t(checkForNA(Constructiondetails?.AnnualRent))}`}
                 actionButton={<ActionButton jumpTo={`/digit-ui/citizen/pt/property/${typeOfApplication}/rental-details`} />}
               />
             )}
@@ -460,7 +460,7 @@ const CheckPage = ({ onSubmit, value = {} }) => {
                   {!isPropertyselfoccupied(units[index]?.selfOccupied?.i18nKey) && (
                     <Row
                       label={t("PT_PROPERTY_ANNUAL_RENT_LABEL")}
-                      text={`₹${t(checkForNA(units[index]?.AnnualRent))}`}
+                      text={`Fdj ${t(checkForNA(units[index]?.AnnualRent))}`}
                       actionButton={<ActionButton jumpTo={`${`/digit-ui/citizen/pt/property/${typeOfApplication}/rental-details/`}${index}`} />}
                     />
                   )}
@@ -511,7 +511,7 @@ const CheckPage = ({ onSubmit, value = {} }) => {
                 {!isPropertyselfoccupied(units["-1"]?.selfOccupied?.i18nKey) && (
                   <Row
                     label={t("PT_PROPERTY_ANNUAL_RENT_LABEL")}
-                    text={`₹${t(checkForNA(units["-1"]?.AnnualRent))} || ""}`}
+                    text={`Fdj ${t(checkForNA(units["-1"]?.AnnualRent))} || ""}`}
                     actionButton={<ActionButton jumpTo={`/digit-ui/citizen/pt/property/${typeOfApplication}/rental-details/-1`} />}
                   />
                 )}
@@ -562,7 +562,7 @@ const CheckPage = ({ onSubmit, value = {} }) => {
                 {!isPropertyselfoccupied(units["-2"]?.selfOccupied?.i18nKey) && (
                   <Row
                     label={t("PT_PROPERTY_ANNUAL_RENT_LABEL")}
-                    text={`₹${t(checkForNA(units["-2"]?.AnnualRent))}`}
+                    text={`Fdj ${t(checkForNA(units["-2"]?.AnnualRent))}`}
                     actionButton={<ActionButton jumpTo={`/digit-ui/citizen/pt/property/${typeOfApplication}/rental-details/-2`} />}
                   />
                 )}

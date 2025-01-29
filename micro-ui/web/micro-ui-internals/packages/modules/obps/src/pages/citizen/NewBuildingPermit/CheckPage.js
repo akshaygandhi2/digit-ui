@@ -325,14 +325,14 @@ import {
       <StatusTable>
       {paymentDetails?.Bill[0]?.billDetails[0]?.billAccountDetails.map((bill,index)=>(
         <div key={index}>
-          <Row className="border-none" label={t(`${bill.taxHeadCode}`)} text={`₹ ${bill?.amount}`} />
+          <Row className="border-none" label={t(`${bill.taxHeadCode}`)} text={`Fdj ${bill?.amount}`} />
         </div>
       ))}
-       <Row className="border-none" label={t(`BPA_COMMON_TOTAL_AMT`)} text={`₹ ${paymentDetails?.Bill?.[0]?.billDetails[0]?.amount || "0"}`} />
+       <Row className="border-none" label={t(`BPA_COMMON_TOTAL_AMT`)} text={`Fdj ${paymentDetails?.Bill?.[0]?.billDetails[0]?.amount || "0"}`} />
        </StatusTable>
       <hr style={{color:"#cccccc",backgroundColor:"#cccccc",height:"2px",marginTop:"20px",marginBottom:"20px"}}/>
       <CardHeader>{t("BPA_COMMON_TOTAL_AMT")}</CardHeader> 
-      <CardHeader>₹ {paymentDetails?.Bill?.[0]?.billDetails[0]?.amount || "0"}</CardHeader> 
+      <CardHeader>Fdj {paymentDetails?.Bill?.[0]?.billDetails[0]?.amount || "0"}</CardHeader> 
       <SubmitBar label={t("BPA_SEND_TO_CITIZEN_LABEL")} onSubmit={onSubmit} />
       </Card>
     </React.Fragment>

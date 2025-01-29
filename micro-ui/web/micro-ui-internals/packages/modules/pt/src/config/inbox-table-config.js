@@ -64,10 +64,10 @@ export const TableConfig = (t) => ({
       {
         Header: t("ES_SEARCH_TAX_DUE"),
         Cell: ({ row }) => {
-          return GetCell("₹ " + row.original?.searchData?.due_tax);
+          return GetCell("Fdj " + row.original?.searchData?.due_tax);
         },
         disableSortBy: true,
-        mobileCell: (original) => GetMobCell("₹ " + original?.searchData?.due_tax),
+        mobileCell: (original) => GetMobCell("Fdj " + original?.searchData?.due_tax),
       },
       {
         Header: t("ES_SEARCH_ACTION"),

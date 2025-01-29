@@ -27,7 +27,7 @@ const useDynamicData = ({moduleCode ,tenantId, filters, t }) => {
         {select: (data) => {
             const mCollectData = {
                 dynamicDataOne : data?.countOfServices === 0 || data?.countOfServices === null ? null : data?.countOfServices + " "+ t("SERVICE_CATEGORIES_OF_CHALLANS_PROCESSED_IN") + " " + t(tenantId),
-                dynamicDataTwo : data?.totalAmountCollected === 0 || data?.totalAmountCollected === null ? null : `₹ ${data?.totalAmountCollected}` + " " +  t("COLLECTED_IN_FORM_OF_CHALLANS_IN_LAST_12_MONTHS"),
+                dynamicDataTwo : data?.totalAmountCollected === 0 || data?.totalAmountCollected === null ? null : `Fdj ${data?.totalAmountCollected}` + " " +  t("COLLECTED_IN_FORM_OF_CHALLANS_IN_LAST_12_MONTHS"),
                 staticData : data?.challanValidity === 0 || data?.challanValidity === null ? null :  data?.challanValidity + " " + (data?.challanValidity === 1 ? t("COMMON_DAY") : t("COMMON_DAYS"))
             }
             return mCollectData;
@@ -82,7 +82,7 @@ const useDynamicData = ({moduleCode ,tenantId, filters, t }) => {
         }), 
         {select: (data) => {
             const wsData = {
-                dynamicDataOne : data?.wstotalCollection === 0 || data?.wstotalCollection === null ? null : `₹ ${data?.wstotalCollection}` + " " +  t("PAID_IN_LAST_12_MONTHS_TOWARDS_WS_CHARGES"),
+                dynamicDataOne : data?.wstotalCollection === 0 || data?.wstotalCollection === null ? null : `Fdj ${data?.wstotalCollection}` + " " +  t("PAID_IN_LAST_12_MONTHS_TOWARDS_WS_CHARGES"),
                 dynamicDataTwo : data?.wstotalConnection === 0 || data?.wstotalConnection === null ? null : data?.wstotalConnection + " " + t("ACTIVE_CONNECTIONS_PRESENT_IN") + " " + t(tenantId),
             }
             return wsData;
