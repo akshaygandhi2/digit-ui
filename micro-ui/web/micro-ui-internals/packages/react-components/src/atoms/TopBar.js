@@ -31,15 +31,15 @@ const TopBar = ({
   // };
   return (
     <div className="navbar">
-      <div className="center-container back-wrapper">
-        <div className="hambuger-back-wrapper">
+      <div className="center-container back-wrapper" style={{alignItems: "center"}}>
+        <div className="hambuger-back-wrapper" style={{alignItems: "center"}}>
           {isMobile && <Hamburger handleClick={toggleSidebar} />}
           <a href={window.location.href.includes("citizen")?"/digit-ui/citizen":"/digit-ui/employee"}><img
             className="city"
             id="topbar-logo"
-            src={img || "https://cdn.jsdelivr.net/npm/@egovernments/digit-ui-css@1.0.7/img/m_seva_white_logo.png"}
-            alt="mSeva"
-            style="width:40px height:43px"
+            src={img || "https://s3.af-south-1.amazonaws.com/egov-bucket/Emblem_of_Djibouti.svg.png"}
+            alt="djibouti"
+            style={{minWidth:"46px", height:"48px"}}
           />
           </a>
           <h3>{cityOfCitizenShownBesideLogo}</h3>

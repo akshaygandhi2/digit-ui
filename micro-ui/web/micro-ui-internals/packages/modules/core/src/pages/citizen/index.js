@@ -154,7 +154,7 @@ const Home = ({
         islinkDataLoading={islinkDataLoading}
       />
 
-      <div className={`main center-container citizen-home-container mb-25`}>
+      <div className={`main center-container citizen-home-container mb-25`} style={{paddingTop: "80px"}}>
         {hideSidebar ? null : (
           <div className="SideBarStatic">
             <StaticCitizenSideBar linkData={linkData} islinkDataLoading={islinkDataLoading} />
