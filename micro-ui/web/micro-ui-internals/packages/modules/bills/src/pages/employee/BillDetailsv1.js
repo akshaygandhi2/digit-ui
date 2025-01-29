@@ -102,7 +102,7 @@ const BillDetailsv1 = (props) => {
                                     labelStyle={{ fontWeight: "normal" }}
                                     textStyle={{ textAlign: "right", maxWidth: "100px" }}
                                     label={t(amountDetails.taxHeadCode)}
-                                    text={"₹ " + amountDetails.amount?.toFixed(2)}
+                                    text={"Fdj " + amountDetails.amount?.toFixed(2)}
                                 />
                             ))}
 
@@ -111,7 +111,7 @@ const BillDetailsv1 = (props) => {
                                 labelStyle={{ fontWeight: "normal" }}
                                 textStyle={{ textAlign: "right", maxWidth: "100px" }}
                                 label={t("COMMON_ARREARS")}
-                                text={"₹ " + arrears?.toFixed?.(2) || Number(0).toFixed(2)}
+                                text={"Fdj " + arrears?.toFixed?.(2) || Number(0).toFixed(2)}
                             />
                         ) : null}
 
@@ -119,7 +119,7 @@ const BillDetailsv1 = (props) => {
                         <Row
                             label={t("CS_PAYMENT_TOTAL_AMOUNT")}
                             textStyle={{ fontWeight: "bold", textAlign: "right", maxWidth: "100px" }}
-                            text={"₹ " + getTotal()}
+                            text={"Fdj " + getTotal()}
                         />
                     </StatusTable>
                 </>

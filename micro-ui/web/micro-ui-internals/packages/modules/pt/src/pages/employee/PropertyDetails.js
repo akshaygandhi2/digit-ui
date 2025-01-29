@@ -186,7 +186,7 @@ const PropertyDetails = () => {
           },
           {
             title: "PT_TOTAL_DUES",
-            value: fetchBillData?.Bill[0]?.totalAmount ? `₹ ${fetchBillData?.Bill[0]?.totalAmount}` : "N/A",
+            value: fetchBillData?.Bill[0]?.totalAmount ? `Fdj ${fetchBillData?.Bill[0]?.totalAmount}` : "N/A",
           },
         ],
       });

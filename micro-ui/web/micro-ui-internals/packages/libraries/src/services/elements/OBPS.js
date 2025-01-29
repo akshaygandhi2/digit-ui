@@ -336,7 +336,7 @@ export const OBPSService = {
         ob?.paymentDetails?.[0]?.bill?.billDetails?.[0]?.billAccountDetails.map((bill, index) => {
           collectionBillArray.push(
             { title: `${bill?.taxHeadCode}_DETAILS`, value: "", isSubTitle: true },
-            { title: bill?.taxHeadCode, value: `₹${bill?.amount}` },
+            { title: bill?.taxHeadCode, value: `Fdj ${bill?.amount}` },
             { title: "BPA_STATUS_LABEL", value: "Paid" }
           );
           totalAmount = totalAmount + parseInt(bill?.amount);
@@ -346,11 +346,11 @@ export const OBPSService = {
     if (fetchBillRes?.Bill?.length > 0) {
       collectionBillArray.push(
         { title: `${fetchBillRes?.Bill?.[0]?.billDetails?.[0]?.billAccountDetails?.[0]?.taxHeadCode}_DETAILS` || `BPA_SANC_FEE_DETAILS`, value: "", isSubTitle: true},
-        { title: `BPA_SANC_FEE_LABEL`, value: `₹${fetchBillRes?.Bill?.[0]?.totalAmount}` },
+        { title: `BPA_SANC_FEE_LABEL`, value: `Fdj ${fetchBillRes?.Bill?.[0]?.totalAmount}` },
         { title: "BPA_STATUS_LABEL", value: `${fetchBillRes?.Bill?.[0]?.totalAmount == 0 ? "Paid" : "Unpaid"}` }
       )
     }
-    totalAmount > 0 && collectionBillArray.push({ title: "BPA_TOT_AMT_PAID", value: `₹${totalAmount}` });
+    totalAmount > 0 && collectionBillArray.push({ title: "BPA_TOT_AMT_PAID", value: `Fdj ${totalAmount}` });
     
     const billDetails = {
       title: "BPA_FEE_DETAILS_LABEL",

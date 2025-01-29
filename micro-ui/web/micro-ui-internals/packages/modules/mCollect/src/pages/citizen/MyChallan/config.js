@@ -12,7 +12,7 @@ export const config = [
           fontSize: "24px",
           fontWeight: "bold",
         },
-        notePrefix: "₹ ",
+        notePrefix: "Fdj ",
       },
       {
         label: "UC_CHALLAN_NO",

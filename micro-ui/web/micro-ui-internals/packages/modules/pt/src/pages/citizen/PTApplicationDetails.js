@@ -275,7 +275,7 @@ const PTApplicationDetails = () => {
 
             {isPropertyTransfer && (
               <React.Fragment>
-                <Row className="border-none" label={t("PT_FEE_AMOUNT")} text={billAmount || t("₹0")} textStyle={{ whiteSpace: "pre" }} />
+                <Row className="border-none" label={t("PT_FEE_AMOUNT")} text={billAmount || t("Fdj 0")} textStyle={{ whiteSpace: "pre" }} />
                 <Row className="border-none" label={t("PT_PAYMENT_STATUS")} text={billStatus} textStyle={{ whiteSpace: "pre" }} />
               </React.Fragment>
             )}
@@ -489,7 +489,7 @@ const PTApplicationDetails = () => {
                               <Row
                                 className="border-none"
                                 label={t("PT_FORM2_TOTAL_ANNUAL_RENT")}
-                                text={`${(unit?.arv && `₹${unit?.arv}`) || t("CS_NA")}`}
+                                text={`${(unit?.arv && `Fdj ${unit?.arv}`) || t("CS_NA")}`}
                               />
                             )}
                           </StatusTable>

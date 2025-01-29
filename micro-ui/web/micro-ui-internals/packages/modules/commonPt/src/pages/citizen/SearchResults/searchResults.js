@@ -215,13 +215,13 @@ const PropertySearchResults = ({ template, header, actionButtonLabel, isMutation
           <div ref={modalRef}>
             <KeyNote
               keyValue={t("PT_AMOUNT_DUE")}
-              note={`₹ ${modalData?.total_due?.toLocaleString("en-IN")}`}
+              note={`Fdj ${modalData?.total_due?.toLocaleString("en-IN")}`}
               noteStyle={{ fontSize: "24px", fontWeight: "bold" }}
             />
             <p>
               {t("PT_YOU_HAVE") +
                 " " +
-                "₹" +
+                "Fdj" +
                 " " +
                 modalData?.total_due.toLocaleString("en-IN") +
                 " " +

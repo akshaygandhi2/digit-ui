@@ -124,7 +124,7 @@ const SelectTripData = ({ t, config, onSelect, formData = {}, userType }) => {
       {inputs?.map((input, index) => (
         <LabelFieldPair key={index}>
           <CardLabel className="card-label-smaller">
-            {t(input.label) + " (₹)"}
+            {t(input.label) + " (Fdj)"}
             {input.isMandatory ? " * " : null}
           </CardLabel>
           <div className="field">

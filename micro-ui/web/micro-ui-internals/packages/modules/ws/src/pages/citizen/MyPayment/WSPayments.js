@@ -8,7 +8,7 @@ const WSPayments = ({ application }) => {
   const { t } = useTranslation();
   return (
     <Card>
-      <KeyNote noteStyle={{fontSize:"24px", fontWeight:"700"}} keyValue={t("CS_PAYMENT_AMOUNT_DUE_WITHOUT_SYMBOL")} note={`₹ ${application?.paymentDetails?.[0]?.totalAmountPaid}`} />
+      <KeyNote noteStyle={{fontSize:"24px", fontWeight:"700"}} keyValue={t("CS_PAYMENT_AMOUNT_DUE_WITHOUT_SYMBOL")} note={`Fdj ${application?.paymentDetails?.[0]?.totalAmountPaid}`} />
       <KeyNote keyValue={t("WS_SERVICE_NAME_LABEL")} note={t(`WS_SERVICE_TYPE_${application?.paymentDetails?.[0]?.businessService}`)} />
       <KeyNote keyValue={t("WS_CONSUMER_CODE")} note={t(application?.paymentDetails?.[0]?.bill?.consumerCode)} />
       <KeyNote keyValue={t("WS_CONSUMER_NAME")} note={application?.property?.connectionHolders?.map((owner) => owner?.name).join(",") || application?.property?.owners?.map((owner) => owner?.name).join(",") || application?.payerName} />

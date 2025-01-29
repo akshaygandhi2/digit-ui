@@ -616,7 +616,7 @@ const CreateChallen = ({ ChallanData }) => {
             name: ele.code.split(".").join("_"),
             validation: { required: ele.isRequired, pattern: /^(0|[1-9][0-9]*)$/ },
             error: t("UC_COMMON_FIELD_ERROR"),
-            componentInFront: <div className="employee-card-input employee-card-input--front">₹</div>,
+            componentInFront: <div className="employee-card-input employee-card-input--front">Fdj</div>,
             onChange: handleData,
           },
         }));

@@ -110,7 +110,7 @@ export const newConfigMutate = [
               fontSize: "24px",
               fontWeight: "bold",
             },
-            // notePrefix: "₹ ",
+            // notePrefix: "Fdj ",
           },
           {
             label: "PT_PROPERTY_PTUID",

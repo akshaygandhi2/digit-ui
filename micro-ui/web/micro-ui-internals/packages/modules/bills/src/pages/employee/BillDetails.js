@@ -86,8 +86,8 @@ const BillDetails = () => {
                   ) || "NA"
                 }
               />
-              <Row label={t("CR_RECEIPT_AMOUNT")} text={"₹" + PaymentReceipt?.totalAmountPaid || "NA"} />
-              <Row label={t("CR_RECEIPT_PENDING_AMOUNT")} text={"₹" + PaymentReceipt?.totalDue || "₹0"} />
+              <Row label={t("CR_RECEIPT_AMOUNT")} text={"Fdj " + PaymentReceipt?.totalAmountPaid || "NA"} />
+              <Row label={t("CR_RECEIPT_PENDING_AMOUNT")} text={"Fdj " + PaymentReceipt?.totalDue || "Fdj 0"} />
               <Row
                 label={t("CR_RECEIPT_PAYMENT_MODE")}
                 text={PaymentReceipt?.paymentMode ? t(`COMMON_MASTERS_PAYMENTMODE_${PaymentReceipt?.paymentMode}`) || "NA" : "NA"}

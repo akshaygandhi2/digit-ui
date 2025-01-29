@@ -140,7 +140,7 @@ const getAssessmentInfo = (application, t) => {
         value:
           (flrno = unit?.floorNo) > -3
             ? t(getPropertyOccupancyTypeLocale(unit?.occupancyType)) === "Rented"
-              ? (unit?.arv && `₹${t(unit?.arv)}`) || "NA"
+              ? (unit?.arv && `Fdj${t(unit?.arv)}`) || "NA"
               : t("")
             : "",
       },

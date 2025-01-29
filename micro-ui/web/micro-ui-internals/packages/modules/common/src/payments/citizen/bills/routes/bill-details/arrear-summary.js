@@ -43,7 +43,7 @@ const ArrearSummary = ({ bill = {} }) => {
   let sortedBillDetails = bill?.billDetails?.sort((a, b) => b.fromPeriod - a.fromPeriod) || [];
   sortedBillDetails = [...sortedBillDetails];
   const arrears = sortedBillDetails?.reduce((total, current, index) => (index === 0 ? total : total + current.amount), 0) || 0;
-  let arrearsAmount = `₹ ${arrears?.toFixed?.(0) || Number(0).toFixed(0)}`;
+  let arrearsAmount = `Fdj ${arrears?.toFixed?.(0) || Number(0).toFixed(0)}`;
 
   sortedBillDetails.shift();
   sortedBillDetails.map((bill) => {

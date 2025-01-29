@@ -115,14 +115,14 @@ const SelectPaymentPreference = ({ config, formData, t, onSelect, userType }) =>
         isDisabled={currentValue > max ? true : false || currentValue < min ? true : false}
         t={t}
       >
-        <KeyNote keyValue={t("ADV_TOTAL_AMOUNT") + " (₹)"} note={max} />
-        <KeyNote keyValue={t("FSM_ADV_MIN_PAY") + " (₹)"} note={min} />
+        <KeyNote keyValue={t("ADV_TOTAL_AMOUNT") + " (Fdj)"} note={max} />
+        <KeyNote keyValue={t("FSM_ADV_MIN_PAY") + " (Fdj)"} note={min} />
         {inputs?.map((input, index) => {
           return (
             <React.Fragment key={index}>
               <LabelFieldPair key={index}>
                 <CardLabel>
-                  {t(input.label) + " (₹)"}
+                  {t(input.label) + " (Fdj)"}
                   {input.isMandatory ? " * " : null}
                 </CardLabel>
                 <div>

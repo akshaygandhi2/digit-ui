@@ -354,14 +354,14 @@ const CheckPage = ({ onSubmit, value }) => {
         <StatusTable>
           {reciept_data?.Payments?.[0]?.paymentDetails?.[0]?.bill?.billDetails?.[0]?.billAccountDetails.map((bill, index) => (
             <div key={index}>
-              <Row className="border-none" label={t(`${bill.taxHeadCode}`)} text={`₹ ${bill?.amount}`} />
+              <Row className="border-none" label={t(`${bill.taxHeadCode}`)} text={`Fdj ${bill?.amount}`} />
             </div>
           ))}
-          <Row className="border-none" label={t(`BPA_COMMON_TOTAL_AMT`)} text={`₹ ${reciept_data?.Payments?.[0]?.paymentDetails?.[0]?.bill?.billDetails?.[0]?.amount || "0"}`} />
+          <Row className="border-none" label={t(`BPA_COMMON_TOTAL_AMT`)} text={`Fdj ${reciept_data?.Payments?.[0]?.paymentDetails?.[0]?.bill?.billDetails?.[0]?.amount || "0"}`} />
         </StatusTable>
         <hr style={{ color: "#cccccc", backgroundColor: "#cccccc", height: "2px", marginTop: "20px", marginBottom: "20px" }} />
         <CardHeader>{t("BPA_COMMON_TOTAL_AMT")}</CardHeader>
-        <CardHeader>₹ {reciept_data?.Payments?.[0]?.paymentDetails?.[0]?.bill?.billDetails?.[0]?.amount || "0"}</CardHeader>
+        <CardHeader>Fdj {reciept_data?.Payments?.[0]?.paymentDetails?.[0]?.bill?.billDetails?.[0]?.amount || "0"}</CardHeader>
         <SubmitBar label={t("BPA_COMMON_BUTTON_SUBMIT")} onSubmit={onActionSelect} />
       </Card>
       {showModal ? (

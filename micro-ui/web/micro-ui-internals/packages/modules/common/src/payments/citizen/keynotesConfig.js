@@ -15,7 +15,7 @@ export const getKeyNotesConfig = (businessService, t) => {
                 const days = Math.floor(overdueBy / (86400 * 1000));
                 return (
                   <React.Fragment>
-                    {"₹" + d["totalAmount"]}
+                    {"Fdj " + d["totalAmount"]}
                     {days >= 0 ? (
                       <span className={"card-label-error"} style={{ fontSize: "16px", fontWeight: "normal" }}>{` ( ${t(
                         "CS_PAYMENT_OVERDUE"
@@ -93,7 +93,7 @@ export const getKeyNotesConfig = (businessService, t) => {
         "my-bill": [
           {
             keyValue: "CS_COMMON_AMOUNT_DUE",
-            keyPath: ["totalAmount", (d) => d.toFixed(2), (d) => "₹" + d],
+            keyPath: ["totalAmount", (d) => d.toFixed(2), (d) => "Fdj " + d],
             fallback: "N/A",
             noteStyle: { fontWeight: "bold", fontSize: "24px", paddingTop: "5px" },
           },

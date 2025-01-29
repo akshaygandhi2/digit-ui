@@ -17,17 +17,17 @@ const getApplicationVehicleCapacity = (vehicleCapacity) => {
 
 const getAmountPerTrip = (amountPerTrip) => {
   if (!amountPerTrip) return "N/A";
-  return amountPerTrip !== 0 ? `₹ ${amountPerTrip}` : "N/A";
+  return amountPerTrip !== 0 ? `Fdj ${amountPerTrip}` : "N/A";
 };
 
 const getTotalAmount = (totalAmount) => {
   if (!totalAmount) return "N/A";
-  return totalAmount !== 0 ? `₹ ${totalAmount}` : "N/A";
+  return totalAmount !== 0 ? `Fdj ${totalAmount}` : "N/A";
 };
 
 const getAdvanceAmount = (advanceAmount) => {
   if (advanceAmount === null) return "N/A";
-  return `₹ ${advanceAmount}`;
+  return `Fdj ${advanceAmount}`;
 };
 
 const getPDFData = (application, tenantInfo, t) => {

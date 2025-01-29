@@ -235,7 +235,7 @@ const BillDetails = ({ paymentRules, businessService }) => {
               className="payment-amount-front"
               style={{ border: `1px solid ${paymentType === t("CS_PAYMENT_FULL_AMOUNT") ? "#9a9a9a" : "#9a9a9a"}` }}
             >
-              ₹
+              Fdj
             </span>
             {paymentType !== t("CS_PAYMENT_FULL_AMOUNT") ? (
               businessService === "FSM.TRIP_CHARGES" ? (
@@ -248,7 +248,7 @@ const BillDetails = ({ paymentRules, businessService }) => {
             )}
             {formError === "CS_CANT_PAY_BELOW_MIN_AMOUNT" ? (
               <span className="card-label-error">
-                {t(formError)}: {"₹" + minAmountPayable}
+                {t(formError)}: {"Fdj " + minAmountPayable}
               </span>
             ) : (
               <span className="card-label-error">{t(formError)}</span>
