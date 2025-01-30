@@ -4,6 +4,7 @@ import Hamburger from "./Hamburger";
 import { NotificationBell } from "./svgindex";
 import { useLocation } from "react-router-dom";
 import BackButton from "./BackButton";
+import { useTranslation } from "react-i18next";
 
 const TopBar = ({
   img,
@@ -20,6 +21,7 @@ const TopBar = ({
   hideNotificationIconOnSomeUrlsWhenNotLoggedIn,
   changeLanguage,
 }) => {
+  const { t } = useTranslation();
   const { pathname } = useLocation();
 
   // const showHaburgerorBackButton = () => {
@@ -37,15 +39,16 @@ const TopBar = ({
           <a href={window.location.href.includes("citizen")?"/digit-ui/citizen":"/digit-ui/employee"}><img
             className="city"
             id="topbar-logo"
-            src={img || "https://s3.af-south-1.amazonaws.com/egov-bucket/Emblem_of_Djibouti.svg.png"}
+            src={img || "https://egov-bucket.s3.af-south-1.amazonaws.com/DATUH.jpeg"}
             alt="djibouti"
             style={{minWidth:"46px", height:"48px"}}
           />
           </a>
-          <h3>{cityOfCitizenShownBesideLogo}</h3>
+          <h2 style={{marginLeft: "8px"}}>{`${t("MINISTRY_NAME")}`}</h2>
         </div>
 
         <div className="RightMostTopBarOptions">
+          <h3 style={{borderLeft: "0", borderRight: "1px", borderStyle: "solid", paddingRight: "8px", marginRight: "8px"}}>{cityOfCitizenShownBesideLogo}</h3>
           {!hideNotificationIconOnSomeUrlsWhenNotLoggedIn ? changeLanguage : null}
           {!hideNotificationIconOnSomeUrlsWhenNotLoggedIn ? (
             <div className="EventNotificationWrapper" onClick={onNotificationIconClick}>
