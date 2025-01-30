@@ -165,7 +165,7 @@ const LicenseDetails = ({ t, config, onSelect, userType, formData, ownerIndex })
               name="PanNumber"
               value={PanNumber}
               onChange={selectPanNumber}
-              {...{ required: true, pattern: "[A-Z]{5}[0-9]{4}[A-Z]{1}", title: t("BPA_INVALID_PAN_NO") }}
+              {...{ required: true, pattern: "^[A-Za-z0-9]*$", title: t("BPA_INVALID_PAN_NO") }}
             />
           </div>
         </FormStep> : <Loader /> }
