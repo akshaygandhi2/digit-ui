@@ -106,10 +106,9 @@ const TopBar = ({
       <img className="city" src={loggedin ? cityDetails?.logoId : stateInfo?.statelogo} />
       <span style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%" }}>
         {loggedin &&
-          (cityDetails?.city?.ulbGrade ? (
+          (cityDetails?.city ? (
             <p className="ulb" style={mobileView ? { fontSize: "14px", display: "inline-block" } : {}}>
-              {t(cityDetails?.i18nKey).toUpperCase()}{" "}
-              {t(`ULBGRADE_${cityDetails?.city?.ulbGrade.toUpperCase().replace(" ", "_").replace(".", "_")}`).toUpperCase()}
+              {`${t("MINISTRY_NAME")}`}
             </p>
           ) : (
             <img className="state" src={logoUrl} />

@@ -10,8 +10,9 @@ const OpenLinkContainer = ({ img,}) => {
           className="city"
           id="topbar-logo" 
           crossOrigin="anonymous"
-          src={"https://cdn.jsdelivr.net/npm/@egovernments/digit-ui-css@1.0.7/img/m_seva_white_logo.png"}
-          alt="mSeva"
+          src={"https://egov-bucket.s3.af-south-1.amazonaws.com/DATUH.jpeg"}
+          alt="djibouti"
+          style={{minWidth:"46px", height:"48px"}}
         />
       </div>
     </div>
