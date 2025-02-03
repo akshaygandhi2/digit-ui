@@ -32,8 +32,8 @@ const TopBar = ({
   //   }
   // };
   return (
-    <div className="navbar">
-      <div className="center-container back-wrapper" style={{alignItems: "center"}}>
+    <div className="navbar" style={{padding: "16px 24px"}}>
+      <div className="center-container back-wrapper" style={{alignItems: "center", marginLeft: "0", marginRight: "0"}}>
         <div className="hambuger-back-wrapper" style={{alignItems: "center"}}>
           {isMobile && <Hamburger handleClick={toggleSidebar} />}
           <a href={window.location.href.includes("citizen")?"/digit-ui/citizen":"/digit-ui/employee"}><img
@@ -44,7 +44,7 @@ const TopBar = ({
             style={{minWidth:"46px", height:"48px"}}
           />
           </a>
-          <h2 style={{marginLeft: "8px"}}>{`${t("MINISTRY_NAME")}`}</h2>
+          <h2 style={{marginLeft: "8px", fontWeight: "700"}}>{`${t("MINISTRY_NAME")}`}</h2>
         </div>
 
         <div className="RightMostTopBarOptions">
