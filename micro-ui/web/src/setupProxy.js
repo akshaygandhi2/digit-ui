@@ -28,6 +28,7 @@ module.exports = function (app) {
     "/bpa-services",
     "/tl-services",
     "/egov-user-event",
-    "/inbox/v1/dss/_search"
+    "/inbox/v1/dss/_search",
+    "/tl-calculator"
   ].forEach((location) => app.use(location, createProxy));
 };
